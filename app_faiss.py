@@ -43,8 +43,8 @@ def clean_text(text):
     text = remove_markdown(text)
     return text
 
-st.set_page_config(page_title="Chat with MLOps Conference Videos")
-st.title("Chat with MLOps Videos")
+st.set_page_config(page_title="Chat with Data Mesh Videos")
+st.title("Chat with Data Mesh Videos")
 st.sidebar.markdown("# Query Videos using AI")
 st.sidebar.divider()
 st.sidebar.markdown("Developed by Mark Craddock](https://twitter.com/mcraddock)", unsafe_allow_html=True)
@@ -67,9 +67,9 @@ else:
     st.write(f"Missing files. Upload index.faiss and index.pkl files to {DATASTORE} directory first")
 
 system_template="""
-    As a chatbot, analyse the provided videos on MLOps and offer insights and recommendations.
+    As a chatbot, analyse the provided videos on Data Mesh and offer insights and recommendations.
     Suggestions:
-    Explain MLOps
+    Explain Data Mesh
     Discuss the key insights derived from the videos
     Provide recommendations based on the analysis
     Use the following pieces of context to answer the users question.
