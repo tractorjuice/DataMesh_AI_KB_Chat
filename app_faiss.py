@@ -13,14 +13,9 @@ from streamlit_player import st_player
 # Set OpenAI Model and API key
 openai.api_key = st.secrets["OPENAI_API_KEY"]
 os.environ["PROMPTLAYER_API_KEY"] = st.secrets["PROMPTLAYER"]
-#MODEL = "gpt-3"
-#MODEL = "gpt-3.5-turbo"
-#MODEL = "gpt-3.5-turbo-0613"
-#MODEL = "gpt-3.5-turbo-16k"
-MODEL = "gpt-3.5-turbo-16k-0613"
-#MODEL = "gpt-4"
-#MODEL = "gpt-4-0613"
-#MODEL = "gpt-4-32k-0613"
+#MODEL = "gpt-3.5-turbo-16k" # Legacy
+MODEL = "gpt-3.5-turbo-1106" # Latest model
+#MODEL = "gpt-4-1106-preview"
 
 # Remove HTML from sources
 def remove_html_tags(text):
